@@ -1,7 +1,12 @@
 # Hands-on-lab 6
 
+![](https://github.com/norlen/i0015n-lab6/workflows/general/badge.svg)
+
 Selenium lab in I0015N.
 
+# Configuration
+
+The remote tests expects the environment variable `TEST_URL` to point to Selenium Grid.
 # Tests
 
 There are three different types of tests.
