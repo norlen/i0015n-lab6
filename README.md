@@ -1,6 +1,6 @@
-# Hands-on-lab 6
+![](https://github.com/norlen/i0015n-lab6/workflows/tests/badge.svg)
 
-![](https://github.com/norlen/i0015n-lab6/workflows/general/badge.svg)
+# Hands-on-lab 6
 
 Selenium lab in I0015N.
 
