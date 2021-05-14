@@ -15,7 +15,16 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class Utility {
-    public final static String GridURL = "http://34.204.166.143:4444";
+    public final static String GridURL;
+
+    static {
+        String url = System.getenv("TEST_URL");
+        if (url == null) {
+            GridURL = "http://localhost:4444";
+        } else {
+            GridURL = url;
+        }
+    }
 
     public static WebDriver getDriver(String browser) throws Exception {
         WebDriver driver = null;
@@ -46,6 +55,7 @@ public class Utility {
     }
 
     public static WebDriver getRemoteDriver(String browser) throws Exception {
+        System.out.println(GridURL);
         URL url = new URL(GridURL);
         WebDriver driver = null;
         switch (browser) {
