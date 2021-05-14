@@ -55,7 +55,6 @@ public class Utility {
     }
 
     public static WebDriver getRemoteDriver(String browser) throws Exception {
-        System.out.println(GridURL);
         URL url = new URL(GridURL);
         WebDriver driver = null;
         switch (browser) {
