@@ -1,0 +1,134 @@
+{
+  "id": "df89bb72-690e-46c8-b18f-0298d16483d9",
+  "version": "2.0",
+  "name": "Lab6",
+  "url": "https://www.actitime.com",
+  "tests": [{
+    "id": "477bdb2c-99d5-444f-9094-0212cbf38796",
+    "name": "Lab6-TryFree",
+    "commands": [{
+      "id": "e5b068c2-8deb-426e-8aab-0ce5d195162a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "322123bc-c472-4dc4-ab36-1c4eacd56075",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1013x1095",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb04106b-57b9-47d8-9cfc-ff8b236eccca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Try Free",
+      "targets": [
+        ["linkText=Try Free", "linkText"],
+        ["css=.header__button", "css:finder"],
+        ["xpath=//a[contains(text(),'Try Free')]", "xpath:link"],
+        ["xpath=//section[@id='HeaderVue']/header/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/free-online-trial')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Try Free')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6117e33-c9ea-4296-b824-04eb3367c28d",
+      "comment": "",
+      "command": "click",
+      "target": "id=first-name",
+      "targets": [
+        ["id=first-name", "id"],
+        ["name=firstName", "name"],
+        ["css=#first-name", "css:finder"],
+        ["xpath=//input[@id='first-name']", "xpath:attributes"],
+        ["xpath=//form[@id='form-free-online-trial']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ec31999-030f-44dd-9c21-21ffb39df085",
+      "comment": "",
+      "command": "type",
+      "target": "id=first-name",
+      "targets": [
+        ["id=first-name", "id"],
+        ["name=firstName", "name"],
+        ["css=#first-name", "css:finder"],
+        ["xpath=//input[@id='first-name']", "xpath:attributes"],
+        ["xpath=//form[@id='form-free-online-trial']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "hello"
+    }, {
+      "id": "118a9dad-6baa-4f8e-8ce5-e60852e120b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=last-name",
+      "targets": [
+        ["id=last-name", "id"],
+        ["name=lastName", "name"],
+        ["css=#last-name", "css:finder"],
+        ["xpath=//input[@id='last-name']", "xpath:attributes"],
+        ["xpath=//form[@id='form-free-online-trial']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "world"
+    }, {
+      "id": "f21dbff2-11e1-4986-8e41-6e5b1621d053",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=emailAddress", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-free-online-trial']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "helloworld@student.ltu.se"
+    }, {
+      "id": "54a6112f-789d-4f84-a27a-0a0aed4e0028",
+      "comment": "",
+      "command": "type",
+      "target": "id=company",
+      "targets": [
+        ["id=company", "id"],
+        ["name=company", "name"],
+        ["css=#company", "css:finder"],
+        ["xpath=//input[@id='company']", "xpath:attributes"],
+        ["xpath=//form[@id='form-free-online-trial']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "none"
+    }, {
+      "id": "ba3d92dc-6e22-45a1-93db-16763bc72e81",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0.800000011920929)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c8edade-59b0-4eba-9c88-60e43ff12609",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,300.79998779296875)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "547930f1-8742-4322-94f2-1cb4fc246910",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["477bdb2c-99d5-444f-9094-0212cbf38796"]
+  }],
+  "urls": ["https://www.actitime.com/"],
+  "plugins": []
+}
