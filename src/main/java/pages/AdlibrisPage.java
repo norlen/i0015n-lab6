@@ -2,8 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Page model for the Adlibris start page.
@@ -117,9 +115,6 @@ public class AdlibrisPage {
          * Toggles the cart and heads to the checkout page.
          */
         public void toCheckout() {
-            WebDriverWait wait = new WebDriverWait(driver, 5);
-            wait.until(ExpectedConditions.visibilityOfElementLocated(toCheckoutButton));
-
             driver.findElement(toCheckoutButton).click();
         }
     }

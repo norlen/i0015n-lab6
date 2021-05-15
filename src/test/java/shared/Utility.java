@@ -51,6 +51,10 @@ public class Utility {
                 throw new Exception("Browser not supported");
             }
         }
+        if (driver != null) {
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            driver.manage().window().maximize();
+        }
         return driver;
     }
 
